@@ -6,10 +6,10 @@ const setupSwagger = require("./swagger");
 const app = express();
 app.use(bodyParser.json());
 app.use("/backend", notificationRouter);
+
+setupSwagger(app);
 app.use((req, res) => {
   res.status(404).json({ message: "Not Found" });
 });
-
-setupSwagger(app);
 
 module.exports = { app };

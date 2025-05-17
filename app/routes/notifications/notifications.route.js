@@ -4,7 +4,7 @@ const asyncHandler = require("express-async-handler");
 
 /**
  * @swagger
- * /backend/notification:
+ * /notification:
  *   post:
  *     summary: Queue a notification
  *     requestBody:
@@ -38,7 +38,7 @@ router.post(
 
 /**
  * @swagger
- * /backend/notification:
+ * /notification:
  *   get:
  *     summary: Get notifications (dummy route)
  *     responses:
