@@ -1,5 +1,13 @@
+// index.js
+require("dotenv").config();
 const { app } = require("./app");
+const { connectProducer } = require("./kafka/producer");
 
-app.listen(3000, () => console.log('Server running on port 3000'));
+const PORT = process.env.PORT || 3000;
 
-module.exports = app;
+const start = async () => {
+  await connectProducer(); // Kafka producer connected here
+  app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+};
+
+start();
