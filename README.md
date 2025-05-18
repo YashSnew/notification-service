@@ -14,7 +14,6 @@ This project uses Swagger UI to provide interactive API documentation.
 | --------------------------- | ------------------------------------------------------- |
 | **Node.js**                 | Runtime for server-side logic                           |
 | **Express.js**              | Web framework to handle REST APIs                       |
-| **Apache Kafka**            | Message broker to handle event streaming and decoupling |
 | **MongoDB**                 | NoSQL database to store notifications                   |
 | **Swagger (OpenAPI)**       | API documentation and testing UI                        |
 | **Docker & Docker Compose** | Containerized development and orchestration             |
@@ -59,16 +58,6 @@ Ensure you have the following installed:
 
               -npm install
 
-⚙️ Configure Environment Variables  
-    Create a .env file in the root directory and configure the following variables:
-
-          
-          PORT=3000
-          MONGO_URI=mongodb://localhost:27017/notifications
-          KAFKA_BROKER=localhost:9092
-          KAFKA_TOPIC=notification-events
-  
-  Make sure MongoDB and Kafka are running at the specified host/port, or update the values accordingly.
 
 🧪 Run MongoDB and Kafka (Docker - Recommended)
    If you don’t have Kafka or MongoDB installed locally, use Docker:  
