@@ -63,6 +63,13 @@ Ensure you have the following installed:
    If you don’t have Kafka or MongoDB installed locally, use Docker:  
 
            docker-compose up -d
+
+
+
+  To Check if Kafka is running           
+
+           docker ps
+
            
   
 🚀 Start the Notification Service  
