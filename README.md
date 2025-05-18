@@ -105,7 +105,8 @@ Ensure you have the following installed:
    -cd notification-service
 
 📥 Install Dependencies
-    -npm install
+
+              -npm install
 
 ⚙️ Configure Environment Variables  
     Create a .env file in the root directory and configure the following variables:
@@ -125,7 +126,8 @@ Ensure you have the following installed:
            
   
 🚀 Start the Notification Service  
-     -npm start
+
+              -npm start
 
 
 Expected output:
