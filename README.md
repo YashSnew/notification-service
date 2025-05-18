@@ -111,7 +111,7 @@ Ensure you have the following installed:
 ⚙️ Configure Environment Variables  
     Create a .env file in the root directory and configure the following variables:
 
-          .env
+          
           PORT=3000
           MONGO_URI=mongodb://localhost:27017/notifications
           KAFKA_BROKER=localhost:9092
