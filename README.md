@@ -62,30 +62,27 @@ This project uses Swagger UI to provide interactive API documentation.
 notification-service/
 ├── app/
 │   ├── helpers/                 # Utility functions (e.g., message formatting)
-│   │   └── notifications/
-│   │       └── utils.js
-│   ├── kafka/                   # Kafka producer & consumer setup
+│   ├── notifications/
+│   │   └── utils.js
+│   ├── kafka/                  # Kafka producer & consumer setup
 │   │   ├── consumer.js
 │   │   └── producer.js
-│   ├── middlewares/            # Express middlewares (if any)
-│   ├── models/                 # Mongoose models for MongoDB
+│   ├── middlewares/           # Express middlewares (if any)
+│   ├── models/                # Mongoose models for MongoDB
 │   │   └── notification.model.js
-│   ├── routes/                 # Express route definitions
-│   │   └── notifications/
-│   │       └── notifications.route.js
-│   ├── services/               # Business logic layer
-│   │   └── notification.service.js
-├── .gitignore                  # Files and folders to ignore in git
-├── app.js                      # Express app setup
-├── docker-compose.yml          # Docker multi-service configuration
-├── Dockerfile                  # Docker image setup (if needed)
-├── index.js                    # Entry point of the application
-├── package.json                # Project metadata and dependencies
-├── package-lock.json           # Version lockfile
-├── swagger.js                  # Swagger UI and docs configuration
-└── Tasks/                      # (Optional) Task list or features directory
-
-
+│   ├── routes/                # Express route definitions
+│   │   └── notifications.route.js
+│   └── services/              # Business logic layer
+│       └── notification.service.js
+├── .gitignore                 # Files and folders to ignore in git
+├── app.js                    # Express app setup
+├── docker-compose.yml        # Docker multi-service configuration
+├── Dockerfile                # Docker image setup (if needed)
+├── index.js                  # Entry point of the application
+├── package.json              # Project metadata and dependencies
+├── package-lock.json         # Version lockfile
+├── swagger.js                # Swagger UI and docs configuration
+└── Tasks/                    # (Optional) Task list or features directory
 
 
 
