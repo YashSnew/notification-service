@@ -1,27 +1,32 @@
-const objection = require("objection");
-const { Model } = require("objection");
+const mongoose = require('mongoose');
 
-function validate(model) {
-    return true;
-}
+const notificationSchema = new mongoose.Schema({
+  userId: {
+    type: String,  
+    required: true,
+  },
+  type: {
+    type: String,
+    required: true,
+  },
+  message: {
+    type: String,
+    required: true,
+  },
+  createdAt: { type: Date, default: Date.now },
+});
 
-class Notification extends Model {
-    static get tableName() {
-        return 'notifications';
-    }
+// Static method to create a notification
+notificationSchema.statics.createNotification = function(data) {
+  const notification = new this(data);
+  return notification.save();
+};
 
-    $beforeInsert() {
-        // Handle DB insertions
-        validate(this);
-    }
+// Static method to get all notifications
+notificationSchema.statics.getNotifications = function() {
+  return this.find().exec();
+};
 
-    static create(notificationData, trx = null) {
-        // Error Handling
-        // if (!currentUser) {
-        //     throw new Error("current user not found");
-        // }
-        return this.query(trx).insert({
-            ...notificationData,
-        });
-    }
-}
+const Notification = mongoose.model('Notification', notificationSchema);
+
+module.exports = Notification;
