@@ -29,29 +29,7 @@ This project uses Swagger UI to provide interactive API documentation.
 
 🔧 System Architecture:
 
-
- Client / Microservice
-        |
-        |  POST /notification
-        v
-+----------------------+
-|  Notification API    |
-|  (Express + KafkaJS) |
-+----------------------+
-        |
-        |  Kafka Producer
-        v
-+----------------------+
-|     Kafka Broker     |
-+----------------------+
-        |
-        |  Kafka Consumer
-        v
-+----------------------+
-| Notification Handler |
-|  (Log / DB / Email)  |
-+----------------------+
-
+![image](https://github.com/user-attachments/assets/cd95fc8d-4da0-4b83-b684-4fae91bdf519)
 
 
 
