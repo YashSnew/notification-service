@@ -56,7 +56,7 @@ Ensure you have the following installed:
 
 📥 Install Dependencies
 
-              -npm install
+              npm install
 
 
 🧪 Run MongoDB and Kafka (Docker - Recommended)
@@ -74,7 +74,7 @@ Ensure you have the following installed:
   
 🚀 Start the Notification Service  
 
-              -npm start
+              npm start
 
 
 Expected output:
